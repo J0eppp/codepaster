@@ -1,0 +1,12 @@
+version: "3"
+services:
+  postgres-db:
+      image: postgres
+      restart: always
+      container_name: codepaster_postgres_db
+      environment:
+        POSTGRES_USER: "codepaster"
+        POSTGRES_PASSWORD: "codepaster123"
+    
+      ports:
+       - "25839:5432"
